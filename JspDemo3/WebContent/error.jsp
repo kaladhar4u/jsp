@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-    <%@ page errorPage="error.jsp"%>
-   
+   <%@ page isErrorPage="true"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -9,10 +8,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<% 
-int a=10;
-int b=0;
-%>
-<%= a/b %>
+<%=exception %>
 </body>
 </html>
